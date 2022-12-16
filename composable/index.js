@@ -62,3 +62,11 @@ ReactDOM.render(
     </div>,
     document.getElementById("root")
 )
+// or
+/** 
+ * ReactDOM.render(Navbar(), MainContent(), document.getElementById("root"))
+*/
+/**
+ * Naming conventions of functions are start with a letter in capital case
+ * wrap the function calling as <Fuction />
+ */
