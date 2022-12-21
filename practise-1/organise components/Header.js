@@ -1,4 +1,4 @@
-// import React from "react"
+import React from "react"
 //file and function names remain same
 export default function Header(){
     return (

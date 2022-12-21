@@ -1,4 +1,4 @@
-
+import React from "react"
 export default function MainContent(){
     return (
         // <h1> and <ol> are sibling elements hence to be wrapped
