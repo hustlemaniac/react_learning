@@ -1,7 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+// for importing images from a subfolder
+// process for a webapck
+import logo from './images/react-icon-small.png';
 
-
+console.log(logo);
 export default function Navbar() {
-    return (<h1>Navbar component</h1>)
+    return (
+        <nav>
+            <img src={logo} alt="Logo" className='nav--icon'/>
+            <h3 className='nav--logo_text'>ReactFacts</h3>
+            <h4 className='nav--title'>React Course - Project 1</h4>
+        </nav>
+    )
 }
