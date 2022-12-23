@@ -1,0 +1,10 @@
+CSS NOTES
+
+.main--icon{
+    /* positions image right to the main content */
+    float: right;
+    /* makes the image stick to the right margin of the window */
+    margin-right: -25px;
+    padding-top: 9%;
+    width: 150px;
+} 

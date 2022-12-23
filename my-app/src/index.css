@@ -44,6 +44,10 @@ nav {
 main {
     padding: 57px 27px;
     color: white;
+    background-image: url(./components/images/react-icon-large.png);
+    background-repeat: no-repeat;
+    /* the background stickes to right side of the window */
+    background-position: right 75%;
 
 }
 .main--title{
@@ -61,7 +65,7 @@ main {
 
 }
 .main--facts > li {
-    padding-bottom: 20.35px;
+    padding-bottom: 20.36px;
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
@@ -70,4 +74,18 @@ main {
 .main--facts > li::marker {
     font-size: 1.4rem;
     color: #61DAFB;
-} 
+}
+/* 
+Challenge: Place the gray react logo in the background
+
+Don't use an `img` element, but rather set it as the
+`background-image` of the `main` element.
+
+Hint: you'll need to use the following properties:
+- background-image
+- background-repeat
+- background-position
+
+(Or the shorthand `background` property with values for all
+those other properties)
+*/
