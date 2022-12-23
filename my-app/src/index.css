@@ -61,7 +61,7 @@ main {
 
 }
 .main--facts > li {
-    padding-bottom: 20.36px;
+    padding-bottom: 20.35px;
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
@@ -70,4 +70,4 @@ main {
 .main--facts > li::marker {
     font-size: 1.4rem;
     color: #61DAFB;
-}
+} 
