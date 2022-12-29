@@ -1,1 +1,120 @@
+* {
+    box-sizing: border-box;
+}
+
+/* set background color and default font color */
+body {
+    margin: 0;
+    font-family: 'Inter';
+    font-style: normal;
+    background: #1A1B21;
+    color: aliceblue;
+}
+/* make the image to align at center */
+.header--picture{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    border-radius: 10px;
+}
+
+/* style for name */
+.header--name{
+    padding-top: 15px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+   
+    color: #FFFFFF;    
+}
+
+/* style for profession */
+.header--profession{
+    padding-top: -6px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12.8px;
+    line-height: 15px;
+    text-align: center;
+
+    color: #F3BF99;
+}
+
+/* parent element for contacts using flex to get email div and linkedin div side by side */
+nav {
+    display: flex;
+    align-items: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    padding-top: 15px;
+}
+
+/* get email icon and text side by side using another div and style them */
+.emailDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30%;
+    width: 115px;
+    height: 34px;
+    left: 151px;
+    top: 468px;
+    /* padding: 9px 13px 9px 11px; */
+    gap: 8px;
+
+    background: #FFFFFF;
+    /* gray/300 */
+
+    border: 1px solid #D1D5DB;
+    /* shadow/sm */
+
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+    }
+
+/* get linkedin icon and text side by side using another div and style them */
+.linkedinDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 115px;
+    height: 34px;
+    left: 283px;
+    top: 468px;
+    margin-left: 10%;
+    gap: 8px;
+
+    background: #5093E2;
+    /* shadow/sm */
+    
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+}
+
+/* decrease size of email icon */
+.email--icon{
+    width: 13%;
+}
+
+/* remove colors and assign respective colors to links */
+.email{
+    color: #374151;
+    text-decoration: none;
+}
+.linkedin{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
 
