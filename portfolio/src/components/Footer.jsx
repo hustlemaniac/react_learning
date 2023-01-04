@@ -5,7 +5,7 @@ export default function Footer() {
     return (
         <footer>
             <div className='socials'>
-                    <a href="https://github.com/hustlemaniac?tab=repositories" target="_blank" class="github--icon"></a>
+                    <a href="https://github.com/hustlemaniac" target="_blank" class="github--icon"></a>
                     <a href="https://www.instagram.com/abhenita/" target="_blank" class="instagram--icon"></a>
             </div>
             <div className='Copyright'>
