@@ -2,6 +2,11 @@
     box-sizing: border-box;
 }
 
+
+.App {
+  text-align: center;
+}
+
 /* set background color and default font color */
 body {
     margin: 0;
@@ -9,6 +14,8 @@ body {
     font-style: normal;
     background: #1A1B21;
     color: aliceblue;
+    min-height:100%;
+    position:relative;
 }
 /* make the image to align at center */
 .header--picture{
@@ -119,3 +126,58 @@ nav {
 }
 
 
+main {
+    padding:10px;
+    padding-bottom:115px;   /* Height of the footer */
+    justify-content: center;
+ }
+/* Make the footer sticky */
+footer{
+    background-color: #161619;
+    /* Make the footer sticky */
+    justify-content: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    /* style copyright paragraph */
+    text-align: center;
+    font-size: 11.5px;
+}
+
+.socials{
+    /* make the 2 icons appear in a row using flex */
+    display: flex;
+    font-family: 'Inter';
+    justify-content: center;
+}
+
+/* change opacity of icons when hovered seperately(not .socials:icon as that would make both icons change opacity when one icon is hovered) */
+.github--icon:hover,.instagram--icon:hover {
+    opacity: 0.7;
+
+}
+
+/* set the icons */
+.github--icon{
+    background-size: 25%;
+    width: 160px;
+    height:50px;
+    display:block;
+    background-image: url(./components/images/GithubIcon.png);
+    background-repeat: no-repeat;
+    /* padding-bottom: 10%; */
+    background-position: bottom -0.5px left 0px;
+
+}
+
+.instagram--icon{
+    width: 50px;
+    height:50px;
+    display:block;    
+    background-image: url(./components/images/InstagramIcon.png);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: bottom -0.5px left 0px;
+
+}
