@@ -12,7 +12,7 @@ export default function Contacts() {
             <div className='linkedinDiv'>
                 <img src={linkedinlogo} alt="Logo" className='linkedin--icon'/>
                 <a href="https://www.linkedin.com/in/bhavya-sai-kamasamudram-b6b44b177/" target="_blank" className='linkedin'>LinkedIn</a>
-            </div>
+            </div>           
         </nav>
     )
 }
