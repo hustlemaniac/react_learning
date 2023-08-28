@@ -40,3 +40,24 @@ section {
 .hero--text {
   margin-top: 0;
 }
+.card{
+  width: 176px;
+  font-size: 12px;
+  margin-left: 37px;
+  /* margin-top: 49px; */
+}
+.card--logo{
+  margin-bottom: 9px;
+  border-radius: 9px;
+}
+.rating-star{
+  max-width: 14px;
+  margin-right: 2px;
+}
+#p{
+  margin-top: 8px;
+}
+.card--stats {
+  display: flex;
+  align-items: center;
+}
