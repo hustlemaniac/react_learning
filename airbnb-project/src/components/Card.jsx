@@ -18,22 +18,31 @@ Notes:
   currently are, so don't worry about the fact that you're hard-coding all
   this data into the component.
 */
-import cardImg from './images/katie-zaferes.png';
-import star from './images/star.png';
-export default function Card() {
+// import cardImg from './images/katie-zaferes.png';
+import star from '/images/star.png';
+export default function Card(props) {
+    // let badgeText
+    // if (props.openSpots === 0) {
+    //     badgeText = "SOLD OUT"
+    // } else if (props.location === "Online") {
+    //     badgeText = "ONLINE"
+    // }
+    // {badgeText === 0 && <div className="card--badge">{badgeText}</div>}
     return (
         <div className='card'>
-            <img src={cardImg} alt="cardImg" className='card--logo'/>
+            {/* conditional rendering, sold out badge if the element has 0 openspots */}
+            {props.openSpots === 0 && <div className="card--badge">SOLD OUT</div>}
+            <img src={`../images/${props.coverImg}`} alt="cardImg" className='card--logo'/>
             {/* <img src="./images/katie-zaferes.png" /> */}
             <div className='card-stats'>
                 <img src={star} alt="star" className='rating-star'/>
-                <span>5.0</span>
-                <span style={{color: "#918E9B"}}>(6) • </span>
-                <span style={{color: "#918E9B"}}>USA</span>
+                <span>{props.stats.rating}</span>
+                <span style={{color: "#918E9B"}}>({props.stats.reviewCount}) • </span>
+                <span style={{color: "#918E9B"}}>{props.location}</span>
             </div>
-            <p>Life Lesson with Katie Zaferes</p>
+            <p>{props.title}</p>
             <div className='card-price'>
-                <span><b>From $136 </b> </span>
+                <span><b>From ${props.price} </b> </span>
                 <span>/ person</span>
             </div>
 

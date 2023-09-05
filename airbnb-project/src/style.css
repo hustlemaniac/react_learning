@@ -40,13 +40,24 @@ section {
 .hero--text {
   margin-top: 0;
 }
-.card{
-  width: 176px;
+
+.cards-list {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  overflow-x: auto;
+}
+.card {
+  padding: 20px;
+  width: 200px;
   font-size: 12px;
-  margin-left: 37px;
-  /* margin-top: 49px; */
+  flex: 0 0 auto;         /* ADD */
+  display: flex;          /* ADD */
+  flex-direction: column; /* ADD */
+  position: relative;
 }
 .card--logo{
+  width: 195px;
   margin-bottom: 9px;
   border-radius: 9px;
 }
@@ -60,4 +71,23 @@ section {
 .card--stats {
   display: flex;
   align-items: center;
+}
+/* ADD */
+.card--price {
+  margin-top: auto;
+}
+/* ADD */
+.card--title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card--badge {
+  position: absolute;
+  top: 26px;
+  left: 26px;
+  background-color: white;
+  padding: 5px 7px;
+  border-radius: 2px;
+  font-weight: bold;
 }

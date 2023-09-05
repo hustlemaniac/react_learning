@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-import grid from './images/photo-grid.png';
+import grid from '/images/photo-grid.png';
 
 export default function Navbar() {
     return (
